@@ -502,6 +502,35 @@ mark,
   color: #6c757d;
 }
 
+/*2個並排 不管在任何尺寸都會2個並排*/
+.bob-2item{
+  width:50%;
+}
+
+/*3個並排 在767px以下會垂直排列*/
+.bob-3item{
+  width: 100%;
+}
+.bob-container{
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.bob-row{
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.bob-row:before,.bob-row:after{
+  display: table;
+  content: " ";  
+}
+
+.bob-row:after{
+  clear: both;
+}
+
 code {
   font-size: 87.5%;
   color: #e83e8c;
